@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>View Books</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="BookStyle.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url(#) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80px);
+        }
+        .text-info{
+            font-family: Brush Script MT;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="BooksHome.html" style="color: black">
+            <h3>Books</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="BooksHome.html" style="color: black">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" style="color: black">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="BooksAdd.html" style="color: rgb(171, 155, 243)">Add Book</a>
+                        <a class="dropdown-item" href="BooksUpdate.html" style="color: rgb(171, 155, 243)">Update Book</a>
+                        <a class="dropdown-item" href="BooksView.html" style="color: rgb(171, 155, 243)">View Books</a>
+                        <a class="dropdown-item" href="BooksReview.html" style="color: rgb(171, 155, 243)">Review a Book</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BooksContactUs.html" style="color: black">Contact Us</a>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+
+    <div class="container mt-3">
+        <h1 class="text-info">Available Books</h1>
+        <p>Search Books here:</p>
+        <input class="form-control" id="myInput" type="text" placeholder="Search...">
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>1001</td>
+                    <td>An Autobiography</td>
+                    <td>Jawaharlal Nehru</td>
+                    <td>Biography</td>
+                    <td>444.5</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Broken Wings</td>
+                    <td>Sarojini Naidu</td>
+                    <td>Motivational</td>
+                    <td>500.00</td>
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>Conquest of Self</td>
+                    <td>Mahatma Gandhi</td>
+                    <td>Novel</td>
+                    <td>555.45</td>
+                </tr>
+                <tr>
+                    <td>1007</td>
+                    <td>Chitra</td>
+                    <td>Rabindranath Tagore</td>
+                    <td>Novel</td>
+                    <td>222.33</td>
+                </tr>
+                <tr>
+                    <td>1010</td>
+                    <td>Devadas</td>
+                    <td>Sarat Chandra Chatterjee</td>
+                    <td>Novel</td>
+                    <td>123.45</td>
+                </tr>
+                <tr>
+                    <td>1100</td>
+                    <td>Eternal India</td>
+                    <td>Indira Gandhi</td>
+                    <td>Story</td>
+                    <td>244.66</td>
+                </tr>
+                <tr>
+                    <td>1011</td>
+                    <td>It is Always Possible</td>
+                    <td>Kiran Bedi</td>
+                    <td>Story</td>
+                    <td>145.66</td>
+                </tr>
+                <tr>
+                    <td>1111</td>
+                    <td>Malavikagnimitra</td>
+                    <td>Kalidas</td>
+                    <td>Poem</td>
+                    <td>423.60</td>
+                </tr>
+                <tr>
+                    <td>1212</td>
+                    <td>Prem Pachisi</td>
+                    <td>Prem Chand</td>
+                    <td>Story</td>
+                    <td>299.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AddBook</title>
+    <link rel="stylesheet" href="BookStyle.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url(#) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80px);
+        }
+
+        .card-title {
+            font-family: Brush Script MT;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="BooksHome.html" style="color: black">
+            <h3>Books</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="BooksHome.html" style="color: black">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" style="color: black">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="BooksAdd.html" style="color: rgb(171, 155, 243)">Add Book</a>
+                        <a class="dropdown-item" href="BooksUpdate.html" style="color: rgb(171, 155, 243)">Update Book</a>
+                        <a class="dropdown-item" href="BooksView.html" style="color: rgb(171, 155, 243)">View Books</a>
+                        <a class="dropdown-item" href="BooksReview.html" style="color: rgb(171, 155, 243)">Review a Book</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BooksContactUs.html" style="color: black">Contact Us</a>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+    </br>
+    </br>
+    </br>
+    <div class="container">
+        <div>
+            <h1 class="card-title text-center text-info">Update Book Details</h1>
+            <br>
+            <form align="centre" class="col-xs-1 ">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="BId" placeholder="Book ID" name="Book Id">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="Bname" placeholder="New Book Title" name="New Book Title">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="Aname" placeholder="Author Name" name="Author Name">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col"><select name="Books" class="custom-select">
+                            <option selected>Genre</option>
+                            <option value="Bio">Biography</option>
+                            <option value="Male">Motivational</option>
+                            <option value="Story">Story</option>
+                            <option value="Poem">Poem</option>
+                            <option value="Novel">Novel</option>
+
+                        </select>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="Price" placeholder="New Price" name="New Price">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

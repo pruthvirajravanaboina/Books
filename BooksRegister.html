@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Books</title>
+    <link rel="stylesheet" href="BookStyle.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url(books2.jpg) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="BooksHome.html" style="color: white">
+            <h3>Books</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="BooksHome.html" style="color: white">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" style="color: white">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style="color: rgb(171, 155, 243)">Add Book</a>
+                        <a class="dropdown-item" href="#" style="color: rgb(171, 155, 243)">Update Book</a>
+                        <a class="dropdown-item" href="#" style="color: rgb(171, 155, 243)">View Books</a>
+                        <a class="dropdown-item" href="#" style="color: rgb(171, 155, 243)">Review a Book</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BooksContactUs.html" style="color: white">Contact Us</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!--This code is for register page-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-1 col-sm-4 ml-auto">
+                <div class="card card-signin flex-row my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Register</h5>
+                        <form class="form-signin">
+                            <div class="form-label-group">
+                                <input type="text" id="inputUserame" class="form-control" placeholder="Username"
+                                    required autofocus>
+                                <label for="inputUserame">Username</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                    required>
+                                <label for="inputEmail">Email address</label>
+                            </div>
+
+                            <br>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                    required>
+                                <label for="inputPassword">Password</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputConfirmPassword" class="form-control"
+                                    placeholder="Password" required>
+                                <label for="inputConfirmPassword">Confirm Password</label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="gender" id="inputgender" class="form-control" placeholder="Gender" required>
+                                <label for="inputgender">Gender</label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="age" id="inputAge" class="form-control" placeholder="Age" required>
+
+                                <label for="inputAge">Age</label>
+                            </div>
+
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase"
+                                type="submit">Register</button>
+                            <a class="d-block text-center mt-2 small" href="BooksLogin.html">Sign In</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section></section>
+</body>
+
+</html>
